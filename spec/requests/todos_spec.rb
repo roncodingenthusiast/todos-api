@@ -77,7 +77,7 @@ RSpec.describe 'Todos API', type: :request do
 
       it 'returns a validation failure message' do
         expect(json['message'])
-          .to match(/Validation failed: Title can't be blank/)
+          .to match(/Missing token/)
       end
     end
   end
